@@ -159,8 +159,6 @@ int main(int argc, char * argv [])
 	MPI::COMM_WORLD.Barrier();
 
 	//Print output
-	//Note: This isn't exactly how the assignment wanted things output 
-	//but I had a lot of trouble getting everything onto the master :( 
 	if ( local_min[0] == min ) 
 	{
 	    	double i_min= local_min[1] + rank*J + 1;
